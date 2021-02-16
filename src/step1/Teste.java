@@ -6,7 +6,7 @@ package step1;
 public class Teste {
 
     public static void main(String[] args) {
-        Character character = new Character("Abdou Aziz", "Character");
+        Character character = new Character("Abdou Aziz");
 
         System.out.println(character.getName());
         System.out.println(character.getLife());
@@ -14,6 +14,6 @@ public class Teste {
         System.out.println(character.getStrength());
         System.out.println(character.getWit());
         System.out.println(Character.RPGClass);
-        System.out.println(character.attaque("L'art de la victoire"));;
+        character.attaque("L'art de la victoire se reside dans l'attaque");;
     }
 }

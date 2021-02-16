@@ -12,17 +12,18 @@ public class Character {
     protected int wit;
     protected static String RPGClass;
 
-    public Character(String name, String RPGClass) {
+
+    public Character(String name) {
         this.name = name;
-        Character.RPGClass = RPGClass;
+        Character.RPGClass = "step1.Character";
         this.life = 50;
         this.agility = 2;
         this.strength = 2;
         this.wit = 2;
     }
 
-    protected String attaque(String chaine){
-        return "["+this.name+"] : "+" "+chaine+" .......";
+    public void attaque(String chaine){
+        System.out.println("["+this.name+"] : "+" "+chaine+" .......");
     }
 
     public String getName() {
