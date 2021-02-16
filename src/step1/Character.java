@@ -1,9 +1,11 @@
 package step1;
 
+import step3.Mouvale;
+
 /**
  * @author abdou
  */
-public class Character {
+public class Character implements Mouvale {
 
     protected String name;
     protected int life;
@@ -66,4 +68,23 @@ public class Character {
         this.wit = wit;
     }
 
+    @Override
+    public void moveRight() {
+        System.out.println("["+this.name+"] : "+" move right");
+    }
+
+    @Override
+    public void moveLeft() {
+        System.out.println("["+this.name+"] : "+"move left");
+    }
+
+    @Override
+    public void moveForward() {
+        System.out.println("["+this.name+"] : "+"move forward");
+    }
+
+    @Override
+    public void moveBack() {
+        System.out.println("["+this.name+"] : "+"move back");
+    }
 }
