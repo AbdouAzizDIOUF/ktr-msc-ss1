@@ -1,6 +1,4 @@
-package step1;
-
-import step3.Mouvale;
+package exceptions;
 
 /**
  * @author abdou
@@ -22,10 +20,6 @@ public class Character implements Mouvale {
         this.agility = 2;
         this.strength = 2;
         this.wit = 2;
-    }
-
-    public void attaque(String chaine){
-        System.out.println("["+this.name+"] : "+" "+chaine+" .......");
     }
 
     public String getName() {
@@ -68,6 +62,12 @@ public class Character implements Mouvale {
         this.wit = wit;
     }
 
+    public void attaque(String chaine) throws WeaponException {
+        if ("".equals(chaine)){
+            throw new WeaponException("["+this.name+"] : "+" Je refuse de me battre à mains nues");
+        }
+    }
+
     @Override
     public void moveRight() {
         System.out.print("["+this.name+"] : "+" moves right");
@@ -88,9 +88,15 @@ public class Character implements Mouvale {
         System.out.print("["+this.name+"] : "+"moves back");
     }
 
-
-
     public final void unsheathe(){
        System.out.println("["+this.name+"] : "+"unsheathes his weapon .");
+    }
+
+    public void tryToAttack(String weapon) {
+        try {
+            this.attaque(weapon);
+        }catch(WeaponException e){
+            System.out.println(e.getMessage());
+        }
     }
 }
