@@ -17,9 +17,11 @@ public class Teste {
         warior.moveForward();
         mage.moveRight();
         mage.moveLeft();
-        warior.moveBack();
-        warior.moveForward();
+        mage.moveBack();
+        mage.moveForward();
+
+        warior.unsheathe();
+        mage.unsheathe();
     }
 
-    fourth step
 }

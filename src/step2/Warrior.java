@@ -50,4 +50,6 @@ public class Warrior extends Character {
         super.moveBack();
         System.out.println(" like a bad body");
     }
+
+
 }
