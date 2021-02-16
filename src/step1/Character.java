@@ -70,21 +70,21 @@ public class Character implements Mouvale {
 
     @Override
     public void moveRight() {
-        System.out.println("["+this.name+"] : "+" move right");
+        System.out.print("["+this.name+"] : "+" moves right");
     }
 
     @Override
     public void moveLeft() {
-        System.out.println("["+this.name+"] : "+"move left");
+        System.out.print("["+this.name+"] : "+"moves left");
     }
 
     @Override
     public void moveForward() {
-        System.out.println("["+this.name+"] : "+"move forward");
+        System.out.print("["+this.name+"] : "+"moves forward");
     }
 
     @Override
     public void moveBack() {
-        System.out.println("["+this.name+"] : "+"move back");
+        System.out.print("["+this.name+"] : "+"moves back");
     }
 }

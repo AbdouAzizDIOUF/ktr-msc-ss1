@@ -26,4 +26,28 @@ public class Warrior extends Character {
             System.out.println("["+this.name+"] : "+" Je vais vous ecraser avec mon "+weapon+" .......");
         }
     }
+
+    @Override
+    public void moveRight(){
+        super.moveRight();
+        System.out.println(" like a bad body");
+    }
+
+    @Override
+    public void moveLeft() {
+        super.moveLeft();
+        System.out.println(" like a bad body");
+    }
+
+    @Override
+    public void moveForward() {
+        super.moveForward();
+        System.out.println(" like a bad body");
+    }
+
+    @Override
+    public void moveBack() {
+        super.moveBack();
+        System.out.println(" like a bad body");
+    }
 }
