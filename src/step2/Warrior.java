@@ -15,7 +15,7 @@ public class Warrior extends Character {
         this.agility=8;
         this.wit=3;
 
-        System.out.println("["+this.name+"] : "+" Mon nom restera dans l'histoire !");
+        System.out.println("["+this.name+"] : "+"My name will go down in history!");
     }
 
     @Override
@@ -23,7 +23,7 @@ public class Warrior extends Character {
         if("hammer".equals(weapon) || "sword".equals(weapon))
         {
             super.attaque(weapon);
-            System.out.println("["+this.name+"] : "+" Je vais vous ecraser avec mon "+weapon+" .......");
+            System.out.println("["+this.name+"] : "+"I will crush you with my "+weapon+" .......");
         }
     }
 

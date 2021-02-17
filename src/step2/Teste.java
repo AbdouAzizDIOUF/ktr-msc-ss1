@@ -2,6 +2,9 @@ package step2;
 
 import step1.Character;
 
+/**
+ * @author abdou
+ */
 public class Teste {
 
     public static void main(String[] args) {

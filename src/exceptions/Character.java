@@ -12,10 +12,9 @@ public class Character implements Mouvale {
     protected int wit;
     protected static String RPGClass;
 
-
     public Character(String name) {
         this.name = name;
-        Character.RPGClass = "step1.Character";
+        Character.RPGClass = "Character";
         this.life = 50;
         this.agility = 2;
         this.strength = 2;
@@ -64,7 +63,7 @@ public class Character implements Mouvale {
 
     public void attaque(String chaine) throws WeaponException {
         if ("".equals(chaine)){
-            throw new WeaponException("["+this.name+"] : "+" Je refuse de me battre à mains nues");
+            throw new WeaponException("["+this.name+"] : "+"I refuse to fight with my bare hands");
         }
     }
 

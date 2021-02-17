@@ -1,6 +1,9 @@
 package exceptions;
 
 
+/**
+ * @author abdou
+ */
 public class Teste {
 
     public static void main(String[] args) throws WeaponException {

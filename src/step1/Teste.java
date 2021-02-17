@@ -14,6 +14,6 @@ public class Teste {
         System.out.println(character.getStrength());
         System.out.println(character.getWit());
         System.out.println(Character.RPGClass);
-        character.attaque("L'art de la victoire se reside dans l'attaque");;
+        character.attaque("The art of victory lies in the attack");;
     }
 }

@@ -2,6 +2,9 @@ package step2;
 
 import step1.Character;
 
+/**
+ * @author abdou
+ */
 public class Mage extends Character {
 
     public Mage(String name) {
@@ -12,7 +15,7 @@ public class Mage extends Character {
         this.agility=10;
         this.wit=10;
 
-        System.out.println("["+this.name+"] : "+" Que les dieux soient avec moi !");
+        System.out.println("["+this.name+"] : "+"May the gods be with me!");
     }
 
     @Override
@@ -20,7 +23,7 @@ public class Mage extends Character {
         if("magic".equals(weapon) || "wand".equals(weapon))
         {
             super.attaque(weapon);
-            System.out.println("["+this.name+"] : "+" Ressentez la puissance de mon arme "+weapon+" .......");
+            System.out.println("["+this.name+"] : "+"Feel the power of my weapon "+weapon+" .......");
         }
     }
 
